@@ -1,14 +1,11 @@
-
-
-
 import os
 import mysql.connector
 
 db = mysql.connector.connect(
-    host=os.environ.get("dpg-d6e18h75r7bs73bbfskg-a"),
-    user=os.environ.get("feminova_user"),
-    password=os.environ.get("InNmYo9axkBI2uFZ8qS1vrcRLQ7XpofF"),
-    database=os.environ.get("feminova"),
+    host=os.environ.get("DB_HOST"),
+    user=os.environ.get("DB_USER"),
+    password=os.environ.get("DB_PASSWORD"),
+    database=os.environ.get("DB_NAME"),
 )
 
 def get_cursor():
